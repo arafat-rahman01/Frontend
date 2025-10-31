@@ -1,0 +1,29 @@
+#out{
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+#in1{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border:1.5px solid rgb(33, 94, 199);
+    background-color: green;
+    border-radius: 50%;
+}
+#in2{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border:1.5px solid rgb(83, 219, 62);
+    background-color: red;
+    border-radius: 50%;
+}
+#in3{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border:1.5px solid rgb(224, 110, 110);
+    background-color: yellow;
+    border-radius: 50%;
+}

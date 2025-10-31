@@ -1,0 +1,23 @@
+#div1{
+    height: 150px;
+    width: 300px;
+    border: 5px solid dotted;
+    background-color: grey;
+    margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+}
+.d{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border: 2px solid black;
+     margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em;
+    display: inline-flex;
+}

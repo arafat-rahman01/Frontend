@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HTML+CSS Advanced Practice</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Theme toggle -->
+  <input type="checkbox" id="theme-toggle" aria-hidden="true" class="hidden">
+
+  <div class="wrap">
+    <!-- Header -->
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">A</div>
+          <div>
+            <div>PracticeLab</div>
+            <div class="muted small">HTML · CSS Advanced</div>
+          </div>
+        </div>
+
+        <!-- Hamburger -->
+        <label class="hamb" for="menu-toggle"><span></span></label>
+        <input type="checkbox" id="menu-toggle" class="hidden" />
+
+        <nav>
+          <ul>
+            <li><a href="#main">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><label for="theme-toggle" class="toggle-btn">Toggle Theme</label></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <section class="hero">
+        <div>
+          <h1>Full-page Advanced HTML + CSS Practice</h1>
+          <p>Responsive layout, variables, slider, modal, form validation — সব একসাথে!</p>
+          <div class="btns">
+            <a href="#gallery" class="cta">Try Gallery →</a>
+            <label for="modal-toggle" class="cta outline">Open Demo Modal</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="card"><h3>Responsive Grid</h3><p class="muted">auto-fit + minmax</p></div>
+          <div class="card"><h3>CSS Variables</h3><p class="muted">Theme toggle with :root vars</p></div>
+        </div>
+      </section>
+
+      <!-- Grid of cards -->
+      <section class="grid">
+        <article class="card">
+          <h3>Flexbox & Grid</h3><p class="muted">Layout mix</p>
+        </article>
+
+        <article class="card">
+          <h3>CSS-only Slider</h3>
+          <input type="radio" id="s1" name="sld" checked>
+          <input type="radio" id="s2" name="sld">
+          <input type="radio" id="s3" name="sld">
+
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">Slide 1</div>
+              <div class="slide">Slide 2</div>
+              <div class="slide">Slide 3</div>
+            </div>
+          </div>
+          <div class="navdots">
+            <label for="s1" class="dot"></label>
+            <label for="s2" class="dot"></label>
+            <label for="s3" class="dot"></label>
+          </div>
+        </article>
+
+        <article class="card"><h3>CSS-only Modal</h3><p class="muted">Checkbox hack</p></article>
+        <article class="card"><h3>Accessible Form</h3><p class="muted">:invalid styling</p></article>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+          <figure class="card"><img src="https://picsum.photos/400/200?1"><figcaption>Image 1</figcaption></figure>
+          <figure class="card"><img src="https://picsum.photos/400/200?2"><figcaption>Image 2</figcaption></figure>
+          <figure class="card"><img src="https://picsum.photos/400/200?3"><figcaption>Image 3</figcaption></figure>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact Form</h2>
+        <div class="card">
+          <form>
+            <label>Name <input type="text" required></label>
+            <label>Email <input type="email" required></label>
+            <label>Topic
+              <select required>
+                <option value="">Select...</option>
+                <option>Project Idea</option>
+                <option>Code Review</option>
+              </select>
+            </label>
+            <label>Message <textarea required></textarea></label>
+            <button type="submit" class="cta">Send</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Modal -->
+      <input type="checkbox" id="modal-toggle" class="hidden">
+      <div class="modal-backdrop">
+        <div class="modal">
+          <h2>CSS-only Modal</h2>
+          <p>This modal works with just checkbox + CSS.</p>
+          <label for="modal-toggle" class="close-btn">Close</label>
+        </div>
+      </div>
+    </main>
+
+    <footer>Built for practice • Resize window & test features</footer>
+  </div>
+</body>
+</html>
