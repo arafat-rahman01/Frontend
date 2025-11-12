@@ -1,37 +1,32 @@
-h1,h3{
+body{
     text-align: center;
 }
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
 
-#box{
+.btn-container{
     display: flex;
     justify-content: center;
 }
 
-.box1{
-    border-radius: 10px;
-    height: 100px;
-    width: 100px;
-    background-color: antiquewhite;
+.yellow{
+    background-color: #f99b45;
 }
-.box2{
-    border-radius: 10px;
-    margin-left: 20px;
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
+.red{
+    background-color: #d95980;
 }
-.box3{
-    border-radius: 10px;
-    margin-top: 20px;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(19, 201, 22);
+.purple{
+    background-color: #819ff9;
 }
-.box4{
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-    height: 100px;
-    width: 100px;
-    background-color: rgb(208, 182, 18);
+.green{
+    background-color: #63aac0;
+}
+
+.flash{
+    background-color: white;
 }
