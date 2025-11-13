@@ -34,3 +34,12 @@ function levelUp(){
 
     btnFlash(randbtn);
 }
+
+function btnPres(){
+    console.log("btn was pressed");
+}
+
+let altBtns=document.querySelectorAll(".btn");
+for(btn of altBtns){
+    btn.addEventListener("click",btnPress);
+}
