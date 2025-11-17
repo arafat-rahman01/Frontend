@@ -17,14 +17,21 @@ document.addEventListener("keypress",function(){
     }
 });
 
-function btnFlash(btn){
+function gameFlash(btn){
    btn.classList.add("flash");
    setTimeout(function(){
     btn.classList.remove("flash");
    },250);
 }
 
-function levelUp(){
+function userFlash(btn){
+   btn.classList.add("userFlash");
+   setTimeout(function(){
+    btn.classList.remove("userFlash");
+   },250);
+}
+
+function levelUp(){         //KeyPress
     level++;
     h2.innerText=`Level ${level}`;
 
@@ -32,14 +39,22 @@ function levelUp(){
     let randColor=btns[randIdx];
     let randbtn=document.querySelector(`.${randColor}`);
 
-    btnFlash(randbtn);
+    gameSeq.push(randColor);
+    console.log(gameSeq);
+    gameFlash(randbtn);
 }
 
-function btnPres(){
-    console.log("btn was pressed");
+function btnPress(){
+    console.log(this);
+    let btn=this;
+    userFlash(btn);  
+
+    userColor=btn.getAttribute("id");
+    console.log(userColor);
 }
 
-let altBtns=document.querySelectorAll(".btn");
-for(btn of altBtns){
+let allBtns=document.querySelectorAll(".btn");
+for(btn of allBtns){
     btn.addEventListener("click",btnPress);
 }
+
