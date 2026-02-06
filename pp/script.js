@@ -26,3 +26,9 @@ const s="Arafat";
 var l=s.length;
 if((s[0]=='A' || s[0]=='a') && l>5) console.log("Golden String");
 else console.log("Not");
+
+//Find largest 3 number
+let arr=[1,4,5,2,6,9,8];
+arr.sort();
+console.log(arr[arr.length-1],arr[arr.length-2],arr[arr.length-3]);
+
