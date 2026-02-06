@@ -18,3 +18,9 @@ else console.log("Not");
 let st=prompt("Enter the string");
 console.log(`Orginal String: ${st}.`);
 console.log(`Now the string is: ${st.trim()}.`);
+
+//6
+let array=["hi","Hello",5,6,34,64,38,90];
+let randNum=38;
+if(array.indexOf(randNum)!=-1) console.log("Found");
+else console.log("Not found");
