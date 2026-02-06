@@ -32,3 +32,8 @@ let arr=[1,4,5,2,6,9,8];
 arr.sort();
 console.log(arr[arr.length-1],arr[arr.length-2],arr[arr.length-3]);
 
+//two number last digit same
+let num1=482432;
+let num2=4232;
+if(num1%10==num2%10) console.log("Same");
+else console.log("Not same");
