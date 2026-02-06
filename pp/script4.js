@@ -25,3 +25,12 @@ while(num!=0){
     num=Math.floor(num/10);
 }
 console.log(sum);
+
+//4
+let n=5;
+let ans=1;
+for(let i=1;i<=n;i++){
+    ans*=i;
+}
+console.log(ans);
+
