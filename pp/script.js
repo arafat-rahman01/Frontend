@@ -7,6 +7,16 @@ if(number%10===0){
 }
 
 //2
-let userName =prompt("Please enter your name");
-let age =prompt("please enter your age");
-alert(`${userName} is ${age} years old.`);
+// let userName =prompt("Please enter your name");
+// let age =prompt("please enter your age");
+// alert(`${userName} is ${age} years old.`);
+
+//3
+let quatar=4;
+switch(quatar){
+    case 1: console.log("J,F,M");break;
+    case 2: console.log("A,M,J");break;
+    case 3: console.log("J,A,S");break;
+    case 4: console.log("O,N,D");break;
+    default: console.log("Enter a valid quater");
+}
