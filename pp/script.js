@@ -20,3 +20,9 @@ switch(quatar){
     case 4: console.log("O,N,D");break;
     default: console.log("Enter a valid quater");
 }
+
+//4
+const s="Arafat";
+var l=s.length;
+if((s[0]=='A' || s[0]=='a') && l>5) console.log("Golden String");
+else console.log("Not");
