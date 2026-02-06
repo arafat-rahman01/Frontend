@@ -5,5 +5,11 @@ console.log(arr.slice(0,n));
 //2
 console.log(arr.slice(arr.length-n));
 //3
-if(arr.length==0) console.log("Empty");
+let str="arafat";
+if(str.length==0) console.log("Empty");
 else console.log("Not empty");
+
+//4
+if(str==str.toLowerCase()) console.log("Yes");
+else console.log("Not");
+
