@@ -61,16 +61,45 @@
 // longestLength();
 
 //4
-let s="abcfgtiokliaaeeeeiiiioooooouuuu";
-let count=0;
-function countVowel(){
-    for(let i=0;i<s.length;i++){
-        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' ||
-            s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'
-        ){
-            count++;
-        }
-    }
-    console.log(count);
+// let s="abcfgtiokliaaeeeeiiiioooooouuuu";
+// let count=0;
+// function countVowel(){
+//     for(let i=0;i<s.length;i++){
+//         if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' ||
+//             s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'
+//         ){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// countVowel();
+
+// function countVowels(str) {
+//     let count = 0;
+//     let vowels = "aeiouAEIOU";
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+// console.log(countVowels("United States of America"));
+
+//5
+let s=1;
+let e=10;
+let d=e-s;
+
+function genRandom(){
+    console.log(Math.floor(Math.random()*(e-s+1))+st);
 }
-countVowel();
+ genRandom();
+
+function randomInRange(start, end) {
+    return Math.floor(Math.random() * (end - start + 1)) + start;
+}
+console.log(randomInRange(5, 15));
