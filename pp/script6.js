@@ -47,15 +47,30 @@
 // console.log(ans);
 
 //3
-let country=["Germany","Bangladesh","United States Of America"];
+// let country=["Germany","Bangladesh","United States Of America"];
 
-function longestLength(){
-    let ans="";
-    for(let i=0;i<country.length;i++){
-        if(country[i].length>ans.length){
-            ans=country[i];
+// function longestLength(){
+//     let ans="";
+//     for(let i=0;i<country.length;i++){
+//         if(country[i].length>ans.length){
+//             ans=country[i];
+//         }
+//     }
+//     console.log(ans);
+// }
+// longestLength();
+
+//4
+let s="abcfgtiokliaaeeeeiiiioooooouuuu";
+let count=0;
+function countVowel(){
+    for(let i=0;i<s.length;i++){
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u' ||
+            s[i]=='A' || s[i]=='E' || s[i]=='I' || s[i]=='O' || s[i]=='U'
+        ){
+            count++;
         }
     }
-    console.log(ans);
+    console.log(count);
 }
-longestLength();
+countVowel();
