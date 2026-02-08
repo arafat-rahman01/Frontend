@@ -11,3 +11,14 @@ const isEven=(num)=>{
 }
 isEven(10);
 isEven(5);
+
+//3
+const object = {
+  message: 'Hello, World!',
+  logMessage() {
+    console.log(this.message);
+  }
+};
+setTimeout(object.logMessage.bind(object), 1000);
+setTimeout(() => object.logMessage(), 1000);
+setTimeout(object.logMessage, 1000); 
