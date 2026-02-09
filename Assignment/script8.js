@@ -26,5 +26,6 @@ doubleAndReturnArgs([1, 2, 3], 4, 5);
 // Output: [1, 2, 3, 8, 10]
 
 //8.5
-
-
+const mergeObj=(obj1,obj2)=>({...obj1,...obj2});
+let res=mergeObj({name:"Arafat",age:24},{dept:"CSE"});
+console.log(res);
