@@ -86,3 +86,24 @@ console.log(updatedData);
 let a=[-6,2,56,0,2];
 let minVal=Math.min(...a);
 console.log(minVal);
+
+//Rest
+const nums = [1, 2, 3, 4, 5];
+
+const [first, second, ...rest] = nums;
+
+console.log(first); // 1
+console.log(second); // 2
+console.log(rest); // [3, 4, 5]
+
+const user = {
+  nam: "Arafat",
+  age: 22,
+  country: "Bangladesh"
+};
+
+const { nam, ...restInfo } = user;
+
+console.log(nam);      // Arafat
+console.log(restInfo);  // { age: 22, country: "Bangladesh" }
+
