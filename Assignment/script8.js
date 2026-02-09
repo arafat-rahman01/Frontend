@@ -11,3 +11,8 @@ console.log(avrg);
 let a=[1,2,3,4,5];
 let ans=a.map((el)=>(el+5));
 console.log(ans);
+
+//8.3
+let str=["arafat","sakib","hasib","rifat"];
+let upCase=str.map((el)=>(el.toUpperCase()));
+console.log(upCase);
