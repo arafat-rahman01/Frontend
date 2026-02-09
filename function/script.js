@@ -58,6 +58,15 @@
 
 
 //Every Method
-let arr=[10,20,40,100];
-let ans=arr.every((el)=>(el%10==0));
+// let arr=[10,20,40,100];
+// let ans=arr.every((el)=>(el%10==0));
+// console.log(ans);
+
+//Find min number of a array(Reduce mathod)
+let arr=[-5,5,7,3,6,1];
+let ans=arr.reduce((minVal,el)=>{
+  if(minVal>el) return el;
+  else return minVal;
+});
 console.log(ans);
+
