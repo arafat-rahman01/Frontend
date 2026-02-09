@@ -6,3 +6,8 @@ let avrg=ansSum/arr.length ;
 console.log(ansSq);
 console.log(ansSum);
 console.log(avrg);
+
+//8.2
+let a=[1,2,3,4,5];
+let ans=a.map((el)=>(el+5));
+console.log(ans);
