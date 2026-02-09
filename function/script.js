@@ -70,3 +70,19 @@ let ans=arr.reduce((minVal,el)=>{
 });
 console.log(ans);
 
+
+//Spared 
+    //Object
+let data={
+  name:"ARAFAT",
+  dept:"CSE",
+  loc:"Chandpur",
+  year:3.1,
+  age:23
+}
+let updatedData={...data,id:25};
+console.log(updatedData);
+    //min val
+let a=[-6,2,56,0,2];
+let minVal=Math.min(...a);
+console.log(minVal);
