@@ -4,12 +4,14 @@ const text = document.getElementById("text");
 const amount = document.getElementById("amount");
 const balance = document.getElementById("balance");
 const income = document.getElementById("income");
-const expense = document.getElementById("expense");
+const expense = document.getElementById("expense"); 
 
 let transactions =
   localStorage.getItem("transactions") !== null
     ? JSON.parse(localStorage.getItem("transactions"))
     : [];
+
+
 function addTransaction(e) {
   e.preventDefault();
 
@@ -32,6 +34,8 @@ function addTransaction(e) {
 }
 
 form.addEventListener("submit", addTransaction);
+
+
 
 function addTransactionDOM(transaction) {
   const sign = transaction.amount < 0 ? "-" : "+";
