@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  width: 350px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.inc-exp {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.money.plus {
+  color: green;
+}
+
+.money.minus {
+  color: red;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px 0;
+  background: #eee;
+  border-right: 5px solid;
+}
+
+li.plus {
+  border-color: green;
+}
+
+li.minus {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
