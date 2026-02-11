@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Trello Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🧩 Mini Trello Board</h1>
+
+  <div class="board">
+    <div class="column" data-status="todo">
+      <h2>Todo</h2>
+      <div class="list" id="todo"></div>
+      <button onclick="addCard('todo')">+ Add</button>
+    </div>
+
+    <div class="column" data-status="doing">
+      <h2>Doing</h2>
+      <div class="list" id="doing"></div>
+      <button onclick="addCard('doing')">+ Add</button>
+    </div>
+
+    <div class="column" data-status="done">
+      <h2>Done</h2>
+      <div class="list" id="done"></div>
+      <button onclick="addCard('done')">+ Add</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
