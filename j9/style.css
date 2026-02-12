@@ -5,3 +5,8 @@
 .blue{
     color: rgb(77, 77, 231);
 }
+
+.box{
+    border: 1px solid black;
+    background-color: pink;
+}

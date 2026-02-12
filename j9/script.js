@@ -19,7 +19,7 @@ let h1=document.createElement("h1");
 
 h1.innerText="I'm in div.....!";
 
-h1.classList.add("h1");
+div.classList.add("box");
 
 div.appendChild(h1);
 
