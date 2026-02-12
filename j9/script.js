@@ -14,3 +14,18 @@ document.querySelector("body").appendChild(h3);
 h3.classList.add('blue');
 
 //[3]
+let div=document.createElement("div");
+let h1=document.createElement("h1");
+
+h1.innerText="I'm in div.....!";
+
+h1.classList.add("h1");
+
+div.appendChild(h1);
+
+document.body.appendChild(div);
+
+let p=document.createElement("p");
+p.innerText="ME TOO...";
+div.appendChild(p);
+document.body.appendChild(div);
