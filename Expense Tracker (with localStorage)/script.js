@@ -13,7 +13,7 @@ let transactions =
 
 
 function addTransaction(e) {
-  e.preventDefault();
+  e.preventDefault();   //Same page (JS_10 FROM EVENT)
 
   if (text.value === "" || amount.value === "") return;
 
