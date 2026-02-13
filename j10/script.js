@@ -7,7 +7,7 @@ btn.addEventListener("click",
         h3.innerText=randomColor;
 
         let div=document.querySelector("div");
-//        div.classList.add("clr");(The colour always fixed we can't add it)
+//        div.classList.add("clr");(The colour always fixed we can't add it )
         div.style.backgroundColor=randomColor;
     }
 );
