@@ -9,14 +9,15 @@ btn.addEventListener("click",function(){
     let delBtn=document.createElement("button");
     delBtn.innerText="delete";
     delBtn.classList.add("delete");
-    item.appendChild(delBtn);
+    item.appendChild(delBtn);  //inside item->dlt button
 
-    ul.appendChild(item);
+    ul.appendChild(item);   //inside ul->item(list)
 
     inp.value=""; 
 });
 
 //Event Deligation
+//[2] creating button also be delete
 
 ul.addEventListener("click",
     function(event){
@@ -27,6 +28,8 @@ ul.addEventListener("click",
     }
 );
 
+
+//[1]  only work for inbuild step
 // let delBtns=document.querySelectorAll(".delete");
 // for(delBtn of delBtns){
 //     delBtn.addEventListener("click",function(){
