@@ -16,3 +16,26 @@ myPromise
     .catch(function(error){
         console.log(error);
     });
+
+
+//Chain Promise
+function task(message) {
+    return new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            console.log(message);
+            resolve(message);
+        }, 1000);
+    });
+}
+
+task("Task 1")
+    .then(() => {
+        return task("Task 2");
+    })
+    .then(() => {
+        return task("Task 3");
+    })
+    .then(() => {
+        console.log("All Done!");
+    })
+    .catch(err => console.log(err));
