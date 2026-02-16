@@ -39,3 +39,22 @@ task("Task 1")
         console.log("All Done!");
     })
     .catch(err => console.log(err));
+
+//callBack hell -> Promise
+
+let h1 = document.querySelector("h1");
+
+function changeColor(color, delay) {
+    return new Promise(function(resolve) {
+        setTimeout(function() {
+            h1.style.color = color;
+            resolve();
+        }, delay);
+    });
+}
+
+changeColor("red", 1000)
+    .then(() => changeColor("green", 1000))
+    .then(() => changeColor("blue", 1000))
+    .then(() => console.log("Color change completed!"))
+    .catch(err => console.log(err));
