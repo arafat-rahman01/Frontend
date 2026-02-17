@@ -40,7 +40,7 @@ task("Task 1")
     })
     .catch(err => console.log(err));
 
-//callBack hell -> Promise
+//callBack hell -> Promise->await
 
 let h1 = document.querySelector("h1");
 
@@ -53,8 +53,22 @@ function changeColor(color, delay) {
     });
 }
 
+//[2]
 changeColor("red", 1000)
     .then(() => changeColor("green", 1000))
     .then(() => changeColor("blue", 1000))
     .then(() => console.log("Color change completed!"))
     .catch(err => console.log(err));
+
+//[3] 
+    async function changeColors() {
+    try {
+        await changeColor("red", 1000);
+        await changeColor("green", 1000);
+        await changeColor("blue", 1000);
+
+        console.log("All colors changed!");
+    } catch (error) {
+        console.log("Error:", error);
+    }
+}
