@@ -14,3 +14,19 @@ async function getFact() {
         return "Error";
     }
 }
+
+//[3]  sending header with API request
+async function getData() {
+    try {
+        let res = await axios.get("https://catfact.ninja/fact", {
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer YOUR_TOKEN_HERE"
+            }
+        });
+
+        console.log(res.data);
+    } catch (err) {
+        console.log(err);
+    }
+}
